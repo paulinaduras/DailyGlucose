@@ -24,8 +24,7 @@ class MainActivity : AppCompatActivity() {
         btnZaloguj?.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
                 openEkranLogowania()
-                TODO("Not yet implemented")
-            }
+                }
         })
 
 
