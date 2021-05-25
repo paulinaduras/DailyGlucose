@@ -9,10 +9,12 @@
 
     <TextView
         android:id="@+id/textLogowanie1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
         android:layout_marginTop="24dp"
         android:text="Daily Glucose"
+        android:textAlignment="center"
+        android:textColor="#293995"
         android:textSize="48sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,15 +28,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp"
         android:text="Nazwa użytkownika"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextLogowanie1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.261"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textLogowanie1" />
 
     <EditText
-        android:id="@+id/textLogowanie3"
+        android:id="@+id/editTextLogowanie1"
         android:layout_width="288dp"
         android:layout_height="39dp"
         android:layout_marginTop="16dp"
@@ -46,19 +50,21 @@
         app:layout_constraintTop_toBottomOf="@+id/textLogowanie2" />
 
     <TextView
-        android:id="@+id/textLogowanie4"
+        android:id="@+id/textLogowanie3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
         android:text="Hasło"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextLogowanie2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.17"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textLogowanie3" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextLogowanie1" />
 
     <EditText
-        android:id="@+id/textLogowanie5"
+        android:id="@+id/editTextLogowanie2"
         android:layout_width="283dp"
         android:layout_height="43dp"
         android:layout_marginTop="16dp"
@@ -67,28 +73,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textLogowanie4" />
+        app:layout_constraintTop_toBottomOf="@+id/textLogowanie3" />
 
     <Button
         android:id="@+id/btnLogowania"
-        android:layout_width="158dp"
+        android:layout_width="160dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:text="ZALOGUJ"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnNoweKonto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textLogowanie5" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextLogowanie2" />
 
     <Button
-        android:id="@+id/btnPowrotu"
-        android:layout_width="140dp"
+        android:id="@+id/btnNoweKonto"
+        android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        android:text="POWRÓT"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="11dp"
+        android:backgroundTint="#08B60F"
+        android:fontFamily="sans-serif-medium"
+        android:text="Utwórz nowe konto"
+        android:textAllCaps="true"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogowania" />
 
@@ -99,7 +111,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPowrotu"
+        app:layout_constraintTop_toBottomOf="@+id/btnNoweKonto"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/pomiar_cukru" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,13 +8,14 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textEText2"
+        android:id="@+id/textText2"
         android:layout_width="341dp"
         android:layout_height="68dp"
         android:fontFamily="sans-serif-medium"
         android:text="Daily Glucose"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#293995"
         android:textSize="48sp"
         android:textStyle="italic"
         android:typeface="sans"
@@ -22,18 +23,19 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textEStart1" />
+        app:layout_constraintTop_toBottomOf="@+id/textStart1" />
 
     <TextView
-        android:id="@+id/textEStart1"
+        android:id="@+id/textStart1"
         android:layout_width="198dp"
         android:layout_height="34dp"
         android:layout_marginTop="60dp"
         android:text="Witaj w aplikacji"
         android:textAlignment="center"
+        android:textColor="#293995"
         android:textSize="24sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/textEText2"
+        app:layout_constraintBottom_toTopOf="@+id/textText2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +53,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnZarejestruj"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textEText2" />
+        app:layout_constraintTop_toBottomOf="@+id/textText2" />
 
     <Button
         android:id="@+id/btnZarejestruj"

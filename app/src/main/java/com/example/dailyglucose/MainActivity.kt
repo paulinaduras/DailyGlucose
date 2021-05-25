@@ -27,12 +27,21 @@ class MainActivity : AppCompatActivity() {
                 }
         })
 
-
+        btnZarejestruj?.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(v: View?) {
+                openEkranRejestracji()
+            }
+        })
 
     }
 // ta metoda pozwala na przechodzenie z obecnego widoku na widok ekranu Logowania
     private fun openEkranLogowania(){
         val intent = Intent(this, EkranLogowania::class.java)
+        startActivity(intent)
+    }
+
+    private fun openEkranRejestracji(){
+        val intent = Intent(this, EkranRejestracji::class.java)
         startActivity(intent)
     }
 
