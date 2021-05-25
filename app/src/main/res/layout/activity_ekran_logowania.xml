@@ -29,7 +29,7 @@
         android:text="Nazwa użytkownika"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.274"
+        app:layout_constraintHorizontal_bias="0.261"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textLogowanie1" />
 
@@ -61,7 +61,7 @@
         android:id="@+id/textLogowanie5"
         android:layout_width="283dp"
         android:layout_height="43dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,9 +70,9 @@
         app:layout_constraintTop_toBottomOf="@+id/textLogowanie4" />
 
     <Button
-        android:id="@+id/btnLogowanie1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btnLogowania"
+        android:layout_width="158dp"
+        android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:text="ZALOGUJ"
         android:textSize="20sp"
@@ -81,16 +81,16 @@
         app:layout_constraintTop_toBottomOf="@+id/textLogowanie5" />
 
     <Button
-        android:id="@+id/btnLogowanie2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btnPowrotu"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
         android:layout_marginTop="8dp"
-        android:text="Powrót"
+        android:text="POWRÓT"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogowanie1" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLogowania" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -99,7 +99,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogowanie2"
+        app:layout_constraintTop_toBottomOf="@+id/btnPowrotu"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/png_clipart_blood_sugar_glucose_test_diabetes_mellitus_blood_glucose_meters_blood_glucose_monitoring_blood_miscellaneous_hand_thumbnail" />
+        app:srcCompat="@drawable/pomiar_cukru" />
 </androidx.constraintlayout.widget.ConstraintLayout>
