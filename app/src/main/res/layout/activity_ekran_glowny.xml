@@ -7,6 +7,7 @@
     android:background="#B5E8EF"
     tools:context=".EkranGlowny">
 
+
     <TextView
         android:id="@+id/textEGlowny1"
         android:layout_width="300dp"
@@ -29,12 +30,9 @@
         android:id="@+id/btnWyloguj"
         android:layout_width="55dp"
         android:layout_height="60dp"
+        android:background="@drawable/roundestyle"
         android:backgroundTint="#3F51B5"
-        android:fontFamily="sans-serif-medium"
-        android:insetTop="8dp"
-        android:insetBottom="8dp"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:icon="@android:drawable/ic_lock_power_off"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,88 +41,109 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
 
-    <Button
-        android:id="@+id/btnGlownyNowy1"
-        android:layout_width="130dp"
-        android:layout_height="70dp"
-        android:backgroundTint="#F44336"
-        android:text="Nowy"
-        app:layout_constraintBottom_toTopOf="@+id/textGlowny3"
-        app:layout_constraintEnd_toStartOf="@+id/btnGlownyHistoria1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textGlowny2" />
-
-    <Button
-        android:id="@+id/btnGlownyHistoria1"
-        android:layout_width="130dp"
-        android:layout_height="70dp"
-        android:backgroundTint="#F44336"
-        android:text="HISTORIA"
-        app:layout_constraintBottom_toTopOf="@+id/textGlowny3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnGlownyNowy1"
-        app:layout_constraintTop_toBottomOf="@+id/textGlowny2" />
-
-    <Button
-        android:id="@+id/btnGlownyNowy2"
-        android:layout_width="130dp"
-        android:layout_height="70dp"
-        android:backgroundTint="#08B60F"
-        android:text="NOWY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnGlownyHistoria2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textGlowny3" />
-
-    <Button
-        android:id="@+id/btnGlownyHistoria2"
-        android:layout_width="130dp"
-        android:layout_height="70dp"
-        android:backgroundTint="#08B60F"
-        android:text="Historia"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnGlownyNowy2"
-        app:layout_constraintTop_toBottomOf="@+id/textGlowny3" />
-
-    <TextView
-        android:id="@+id/textGlowny2"
-        android:layout_width="208dp"
-        android:layout_height="36dp"
-        android:text="Pomiar glukozy"
-        android:textAlignment="center"
-        android:textColor="#090909"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnGlownyNowy1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-    <TextView
-        android:id="@+id/textGlowny3"
-        android:layout_width="262dp"
-        android:layout_height="42dp"
-        android:text="Dawkowanie insuliny"
-        android:textAlignment="center"
-        android:textColor="#070707"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnGlownyNowy2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGlownyNowy1" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="220dp"
-        android:layout_height="208dp"
-        app:layout_constraintBottom_toTopOf="@+id/textGlowny2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayoutGlownyGlukoza"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textEGlowny1"
         app:srcCompat="@drawable/rka" />
+
+    <FrameLayout
+        android:id="@+id/frameLayoutGlownyGlukoza"
+        android:layout_width="380dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/roundestyle"
+        android:backgroundTint="#AB0297AA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+        <TextView
+            android:id="@+id/textGlowny2"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="10dp"
+            android:text="Pomiar glukozy"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnGlownyNowy1"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/roundestyle"
+            android:backgroundTintMode="add"
+            android:text="Nowy"
+            android:textSize="18dp"/>
+
+        <Button
+            android:id="@+id/btnGlownyHistoria1"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/roundestyle"
+            android:backgroundTint="@color/black"
+            android:text="Historia"
+            android:textSize="18dp"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutGlownyInsulina"
+        android:layout_width="380dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/roundestyle"
+        android:backgroundTint="#B94A5BBA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+        <TextView
+            android:id="@+id/textGlowny3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="10dp"
+            android:text="Dawkowanie insuliny"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnGlownyNowy2"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/roundestyle"
+            android:text="Nowy"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnGlownyHistoria2"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/roundestyle"
+            android:text="Historia"
+            android:textSize="18dp" />
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
