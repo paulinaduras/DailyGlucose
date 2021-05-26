@@ -9,14 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DailyGlucose">
-        <activity android:name=".EkranHistoriaInsuliny"></activity>
+        <activity android:name=".EkranZlaGlukoza"></activity>
+        <activity android:name=".EkranPrawidlowejGlukozy" />
+        <activity android:name=".EkranHistoriaInsuliny" />
         <activity android:name=".EkranHistoriaGlukozy" />
         <activity android:name=".EkranNowyInsulina" />
         <activity android:name=".EkranNowyGlukoza" />
         <activity android:name=".EkranGlowny" />
         <activity android:name=".EkranRejestracji" />
         <activity android:name=".EkranLogowania" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".EkranStartu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

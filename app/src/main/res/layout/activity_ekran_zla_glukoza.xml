@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B5E8EF"
+    tools:context=".EkranZlaGlukoza">
+
+    <Button
+        android:id="@+id/btnBadGlukoza"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="300dp"
+        android:backgroundTint="#08B60F"
+        android:text="OK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBadGlukoza5"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textBadGlukoza1"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="Daily Glucose"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#293995"
+        android:textSize="38sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <ImageView
+        android:id="@+id/imageBadGlukoza"
+        android:layout_width="415dp"
+        android:layout_height="277dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/czekolada" />
+
+    <TextView
+        android:id="@+id/textBadGlukoza2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="O nie !!!"
+        android:textAlignment="center"
+        android:textColor="#F10303"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textBadGlukoza3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBadGlukoza1" />
+
+    <TextView
+        android:id="@+id/textBadGlukoza3"
+        android:layout_width="292dp"
+        android:layout_height="88dp"
+        android:text="Twój poziom glukozy jest zbyt niski."
+        android:textAlignment="center"
+        android:textColor="#F10303"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBadGlukoza2" />
+
+    <TextView
+        android:id="@+id/textBadGlukoza4"
+        android:layout_width="297dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="28dp"
+        android:text="Aby to naprawić zjedz"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textBadGlukoza5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBadGlukoza3" />
+
+    <TextView
+        android:id="@+id/textBadGlukoza5"
+        android:layout_width="177dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="21dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnBadGlukoza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBadGlukoza4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

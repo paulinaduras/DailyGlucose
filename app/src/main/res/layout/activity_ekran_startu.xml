@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#B5E8EF"
-    tools:context=".MainActivity">
+    tools:context=".EkranStartu">
 
     <TextView
-        android:id="@+id/textText2"
+        android:id="@+id/textStart2"
         android:layout_width="341dp"
         android:layout_height="68dp"
         android:fontFamily="sans-serif-medium"
@@ -35,7 +35,7 @@
         android:textColor="#293995"
         android:textSize="24sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/textText2"
+        app:layout_constraintBottom_toTopOf="@+id/textStart2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,7 +53,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnZarejestruj"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textText2" />
+        app:layout_constraintTop_toBottomOf="@+id/textStart2" />
 
     <Button
         android:id="@+id/btnZarejestruj"

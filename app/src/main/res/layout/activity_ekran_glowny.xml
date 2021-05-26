@@ -46,7 +46,7 @@
     <Button
         android:id="@+id/btnGlownyNowy1"
         android:layout_width="130dp"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:backgroundTint="#F44336"
         android:text="Nowy"
         app:layout_constraintBottom_toTopOf="@+id/textGlowny3"
@@ -57,7 +57,7 @@
     <Button
         android:id="@+id/btnGlownyHistoria1"
         android:layout_width="130dp"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:backgroundTint="#F44336"
         android:text="HISTORIA"
         app:layout_constraintBottom_toTopOf="@+id/textGlowny3"
@@ -68,7 +68,7 @@
     <Button
         android:id="@+id/btnGlownyNowy2"
         android:layout_width="130dp"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:backgroundTint="#08B60F"
         android:text="NOWY"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -79,7 +79,7 @@
     <Button
         android:id="@+id/btnGlownyHistoria2"
         android:layout_width="130dp"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:backgroundTint="#08B60F"
         android:text="Historia"
         app:layout_constraintBottom_toBottomOf="parent"

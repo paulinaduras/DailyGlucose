@@ -8,7 +8,7 @@
     tools:context=".EkranRejestracji">
 
     <TextView
-        android:id="@+id/textRejestracja"
+        android:id="@+id/textRejestracja1"
         android:layout_width="320dp"
         android:layout_height="70dp"
         android:layout_marginTop="24dp"
@@ -25,7 +25,7 @@
         app:layout_constraintVertical_bias="0.029" />
 
     <TextView
-        android:id="@+id/textNazwa"
+        android:id="@+id/textRejestracja2"
         android:layout_width="200dp"
         android:layout_height="24dp"
         android:layout_marginTop="32dp"
@@ -35,7 +35,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.303"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textRejestracja" />
+        app:layout_constraintTop_toBottomOf="@+id/textRejestracja1" />
 
     <EditText
         android:id="@+id/editTextRejestracji1"
@@ -45,14 +45,15 @@
         android:layout_marginBottom="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/textHaslo"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textRejestracja3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textNazwa" />
+        app:layout_constraintTop_toBottomOf="@+id/textRejestracja2" />
 
     <TextView
-        android:id="@+id/textHaslo"
+        android:id="@+id/textRejestracja3"
         android:layout_width="136dp"
         android:layout_height="25dp"
         android:text="Hasło"
@@ -71,14 +72,15 @@
         android:layout_marginBottom="16dp"
         android:ems="10"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/textHaslo2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textRejestracja4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textHaslo" />
+        app:layout_constraintTop_toBottomOf="@+id/textRejestracja3" />
 
     <TextView
-        android:id="@+id/textHaslo2"
+        android:id="@+id/textRejestracja4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Powtórz hasło"
@@ -94,18 +96,20 @@
         android:layout_width="280dp"
         android:layout_height="45dp"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
         android:ems="10"
         android:inputType="textPassword"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textRejestracja5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textHaslo2" />
+        app:layout_constraintTop_toBottomOf="@+id/textRejestracja4" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textRejestracja5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="Email"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextEmailAddress"
@@ -118,25 +122,26 @@
         android:id="@+id/editTextEmailAddress"
         android:layout_width="280dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="33dp"
+        android:layout_marginBottom="20dp"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/btnRejestracji"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textRejestracja5" />
 
     <Button
         android:id="@+id/btnRejestracji"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginTop="15dp"
         android:text="Zarejestruj"
         android:textAllCaps="true"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/btnMamKonto"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress" />
 
@@ -144,8 +149,7 @@
         android:id="@+id/btnMamKonto"
         android:layout_width="230dp"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="90dp"
         android:backgroundTint="#08B60F"
         android:text="Mam już konto"
         android:textSize="20sp"

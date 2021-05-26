@@ -58,7 +58,7 @@ class EkranGlowny : AppCompatActivity() {
     }
 
     private fun wyloguj(){
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, EkranStartu::class.java)
         startActivity(intent)
     }
 

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B5E8EF"
+    tools:context=".EkranPrawidlowejGlukozy">
+
+    <TextView
+        android:id="@+id/textGoodGlukoza1"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="Daily Glucose"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#293995"
+        android:textSize="38sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <TextView
+        android:id="@+id/textGoodGlukoza2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="GRATULACJE !!!"
+        android:textAlignment="center"
+        android:textColor="#06AE0D"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textGoodGlukoza3"
+        app:layout_constraintEnd_toStartOf="@+id/imageGoodGlukoza3"
+        app:layout_constraintStart_toEndOf="@+id/imageGoodGlukoza2"
+        app:layout_constraintTop_toBottomOf="@+id/textGoodGlukoza1" />
+
+    <TextView
+        android:id="@+id/textGoodGlukoza3"
+        android:layout_width="285dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="5dp"
+        android:text="Twój poziom glukozy jest prawidłowy."
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageGoodGlukoza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGoodGlukoza2" />
+
+    <Button
+        android:id="@+id/btnGoodGlukoza1"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#08B60F"
+        android:text="OK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageGoodGlukoza" />
+
+    <ImageView
+        android:id="@+id/imageGoodGlukoza"
+        android:layout_width="261dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnGoodGlukoza1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGoodGlukoza3"
+        app:srcCompat="@drawable/gratulacje" />
+
+    <ImageView
+        android:id="@+id/imageGoodGlukoza2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/textGoodGlukoza3"
+        app:layout_constraintEnd_toStartOf="@+id/textGoodGlukoza2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGoodGlukoza1"
+        app:layout_constraintVertical_bias="0.805"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/imageGoodGlukoza3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/textGoodGlukoza3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textGoodGlukoza2"
+        app:layout_constraintTop_toBottomOf="@+id/textGoodGlukoza1"
+        app:layout_constraintVertical_bias="0.805"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
