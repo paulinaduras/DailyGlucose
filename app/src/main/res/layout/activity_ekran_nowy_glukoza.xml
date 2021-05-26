@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B5E8EF"
+    tools:context=".EkranNowyGlukoza">
+
+    <TextView
+        android:id="@+id/textNowyGlukoza1"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="Daily Glucose"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#293995"
+        android:textSize="38sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <TextView
+        android:id="@+id/textNowyGlukoza2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Wprowadz pomiar glukozy"
+        android:textColor="#0C0C0C"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNowyGlukoza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNowyGlukoza1" />
+
+    <EditText
+        android:id="@+id/editTextNowyGlukoza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnNowyGlukoza1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNowyGlukoza2" />
+
+    <Button
+        android:id="@+id/btnNowyGlukoza1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="140dp"
+        android:text="Zatwierdz"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNowyGlukoza" />
+
+    <Button
+        android:id="@+id/btnNowyGlukoza2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="POWRÓT"
+        app:icon="@android:drawable/ic_menu_revert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.961" />
+</androidx.constraintlayout.widget.ConstraintLayout>

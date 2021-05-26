@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DailyGlucose">
-        <activity android:name=".EkranGlowny"></activity>
+        <activity android:name=".EkranHistoriaInsuliny"></activity>
+        <activity android:name=".EkranHistoriaGlukozy" />
+        <activity android:name=".EkranNowyInsulina" />
+        <activity android:name=".EkranNowyGlukoza" />
+        <activity android:name=".EkranGlowny" />
         <activity android:name=".EkranRejestracji" />
         <activity android:name=".EkranLogowania" />
         <activity android:name=".MainActivity">
