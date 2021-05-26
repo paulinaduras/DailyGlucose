@@ -45,12 +45,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="16dp"
+        android:backgroundTint="#08B60F"
         app:icon="@android:drawable/ic_input_add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textHistoriaGlukozy2"
         app:layout_constraintTop_toBottomOf="@+id/textHistoriaGlukoza"
-        app:layout_constraintVertical_bias="0.056" />
+        app:layout_constraintVertical_bias="0.041" />
 
     <TextView
         android:id="@+id/textHistoriaGlukozy2"
@@ -65,6 +66,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textHistoriaGlukoza"
-        app:layout_constraintVertical_bias="0.073" />
+        app:layout_constraintVertical_bias="0.053" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

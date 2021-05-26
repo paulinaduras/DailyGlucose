@@ -10,6 +10,8 @@ import android.widget.EditText
 class EkranNowyGlukoza : AppCompatActivity() {
 
     private var editTextNowyGlukoza: EditText? = null
+    private var editTextGlukozaData: EditText? = null
+    private var editTextGlukozaGodzina: EditText? = null
     private var btnZatwierdz: Button? = null
     private var btnPowrot: Button? = null
 
@@ -18,6 +20,8 @@ class EkranNowyGlukoza : AppCompatActivity() {
         setContentView(R.layout.activity_ekran_nowy_glukoza)
 
         editTextNowyGlukoza = findViewById(R.id.editTextNowyGlukoza)
+        editTextGlukozaData = findViewById(R.id.editTextGlukozaDate)
+        editTextGlukozaGodzina = findViewById(R.id.editTextGlukozaTime)
         btnZatwierdz = findViewById(R.id.btnNowyGlukoza1)
         btnPowrot = findViewById(R.id.btnNowyGlukoza2)
 

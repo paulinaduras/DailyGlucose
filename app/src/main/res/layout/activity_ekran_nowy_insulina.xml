@@ -8,16 +8,16 @@
     tools:context=".EkranNowyInsulina">
 
     <Button
-        android:id="@+id/btnNowyInsulina"
+        android:id="@+id/btnNowyInsulina1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="140dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="130dp"
         android:text="Zatwierdz"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNowyInsulina" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextInsulinaTime" />
 
     <Button
         android:id="@+id/btnNowyInsulina2"
@@ -34,9 +34,10 @@
         app:layout_constraintVertical_bias="0.961" />
 
     <TextView
-        android:id="@+id/textNowyInsulina"
+        android:id="@+id/textNowyInsulina1"
         android:layout_width="300dp"
         android:layout_height="55dp"
+        android:layout_marginTop="20dp"
         android:text="Daily Glucose"
         android:textAlignment="center"
         android:textAllCaps="false"
@@ -48,17 +49,18 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.076" />
+        app:layout_constraintVertical_bias="0.032" />
 
     <EditText
         android:id="@+id/editTextNowyInsulina"
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/btnNowyInsulina"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintBottom_toTopOf="@+id/textNowyInsulina4"
+        app:layout_constraintEnd_toStartOf="@+id/textNowyInsulina3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textNowyInsulina2" />
 
@@ -73,5 +75,73 @@
         app:layout_constraintBottom_toTopOf="@+id/editTextNowyInsulina"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textNowyInsulina" />
+        app:layout_constraintTop_toBottomOf="@+id/textNowyInsulina1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textNowyInsulina3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:text="jednostki"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textNowyInsulina4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toEndOf="@+id/editTextNowyInsulina"
+        app:layout_constraintTop_toBottomOf="@+id/textNowyInsulina2"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <TextView
+        android:id="@+id/textNowyInsulina4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Data podania"
+        android:textColor="#050505"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextInsulinaDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.251"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNowyInsulina" />
+
+    <TextView
+        android:id="@+id/textNowyInsulina5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Godzina podania"
+        android:textColor="#050505"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextInsulinaTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextInsulinaDate" />
+
+    <EditText
+        android:id="@+id/editTextInsulinaDate"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/textNowyInsulina5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNowyInsulina4" />
+
+    <EditText
+        android:id="@+id/editTextInsulinaTime"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintBottom_toTopOf="@+id/btnNowyInsulina1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNowyInsulina5" />
 </androidx.constraintlayout.widget.ConstraintLayout>

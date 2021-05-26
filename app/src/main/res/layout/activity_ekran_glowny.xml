@@ -66,25 +66,25 @@
         app:layout_constraintTop_toBottomOf="@+id/textGlowny2" />
 
     <Button
-        android:id="@+id/btnglownyNowy2"
+        android:id="@+id/btnGlownyNowy2"
         android:layout_width="130dp"
         android:layout_height="50dp"
         android:backgroundTint="#08B60F"
         android:text="NOWY"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnglownyHistoria2"
+        app:layout_constraintEnd_toStartOf="@+id/btnGlownyHistoria2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textGlowny3" />
 
     <Button
-        android:id="@+id/btnglownyHistoria2"
+        android:id="@+id/btnGlownyHistoria2"
         android:layout_width="130dp"
         android:layout_height="50dp"
         android:backgroundTint="#08B60F"
         android:text="Historia"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnglownyNowy2"
+        app:layout_constraintStart_toEndOf="@+id/btnGlownyNowy2"
         app:layout_constraintTop_toBottomOf="@+id/textGlowny3" />
 
     <TextView
@@ -111,7 +111,7 @@
         android:textColor="#070707"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnglownyNowy2"
+        app:layout_constraintBottom_toTopOf="@+id/btnGlownyNowy2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"

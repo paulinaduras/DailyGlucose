@@ -21,9 +21,9 @@ class EkranGlowny : AppCompatActivity() {
 
         btnWyloguj = findViewById(R.id.btnWyloguj)
         btnNowyGlukoza = findViewById(R.id.btnGlownyNowy1)
-        btnNowyInsulina = findViewById(R.id.btnglownyNowy2)
-        btnHistoriaInsuliny = findViewById(R.id.btnGlownyHistoria1)
-        btnHistoriaGlukozy = findViewById(R.id.btnglownyHistoria2)
+        btnNowyInsulina = findViewById(R.id.btnGlownyNowy2)
+        btnHistoriaGlukozy = findViewById(R.id.btnGlownyHistoria1)
+        btnHistoriaInsuliny = findViewById(R.id.btnGlownyHistoria2)
 
         btnWyloguj?.setOnClickListener(object : View.OnClickListener{
             override fun onClick(v: View?) {
