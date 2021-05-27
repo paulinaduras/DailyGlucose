@@ -9,12 +9,11 @@
 
     <TextView
         android:id="@+id/textStart2"
-        android:layout_width="341dp"
-        android:layout_height="68dp"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
         android:fontFamily="sans-serif-medium"
         android:text="Daily Glucose"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#293995"
         android:textSize="48sp"
         android:textStyle="italic"
@@ -43,11 +42,12 @@
 
     <Button
         android:id="@+id/btnZaloguj"
+        android:background="@drawable/roundestyle"
         android:layout_width="200dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_marginTop="60dp"
-        android:layout_marginBottom="10dp"
-        android:text="ZALOGUJ SIĘ"
+        android:layout_marginBottom="15dp"
+        android:text="Zaloguj się"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btnZarejestruj"
@@ -57,11 +57,12 @@
 
     <Button
         android:id="@+id/btnZarejestruj"
+        android:background="@drawable/roundestyle"
         android:layout_width="200dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="40dp"
-        android:text="ZAREJESTRUJ SIĘ"
+        android:text="Zarejestruj się"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageEStart"

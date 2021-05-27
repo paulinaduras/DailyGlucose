@@ -11,7 +11,8 @@
         android:id="@+id/btnNowyInsulina1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
+        android:background="@drawable/roundestyle"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="130dp"
         android:text="Zatwierdz"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,17 +22,16 @@
 
     <Button
         android:id="@+id/btnNowyInsulina2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
         android:backgroundTint="#2196F3"
-        android:text="POWRÓT"
         app:icon="@android:drawable/ic_menu_revert"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.961" />
+        app:layout_constraintVertical_bias="0.023" />
 
     <TextView
         android:id="@+id/textNowyInsulina1"
@@ -46,10 +46,10 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.684"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.032" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/editTextNowyInsulina"
@@ -57,7 +57,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:layout_marginTop="8dp"
-        android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/textNowyInsulina4"
         app:layout_constraintEnd_toStartOf="@+id/textNowyInsulina3"
@@ -68,9 +67,9 @@
         android:id="@+id/textNowyInsulina2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="70dp"
         android:text="Wprowadz dawkę insuliny"
-        android:textColor="#090909"
+        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextNowyInsulina"
         app:layout_constraintEnd_toEndOf="parent"
@@ -99,7 +98,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="Data podania"
-        android:textColor="#050505"
+        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextInsulinaDate"
         app:layout_constraintEnd_toEndOf="parent"
@@ -113,7 +112,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="Godzina podania"
-        android:textColor="#050505"
+        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextInsulinaTime"
         app:layout_constraintEnd_toEndOf="parent"
@@ -126,7 +125,6 @@
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:ems="10"
         android:inputType="date"
         app:layout_constraintBottom_toTopOf="@+id/textNowyInsulina5"
         app:layout_constraintEnd_toEndOf="parent"
@@ -138,10 +136,10 @@
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:ems="10"
         android:inputType="time"
         app:layout_constraintBottom_toTopOf="@+id/btnNowyInsulina1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textNowyInsulina5" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -29,9 +29,8 @@
     <Button
         android:id="@+id/btnWyloguj"
         android:layout_width="55dp"
-        android:layout_height="60dp"
+        android:layout_height="55dp"
         android:background="@drawable/roundestyle"
-        android:backgroundTint="#3F51B5"
         android:textAlignment="center"
         app:icon="@android:drawable/ic_lock_power_off"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,9 +43,9 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="35dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="45dp"
         android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toTopOf="@+id/frameLayoutGlownyGlukoza"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,11 +56,12 @@
 
     <FrameLayout
         android:id="@+id/frameLayoutGlownyGlukoza"
-        android:layout_width="380dp"
+        android:layout_width="360dp"
         android:layout_height="160dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/roundestyle"
         android:backgroundTint="#AB0297AA"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayoutGlownyInsulina"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3">
@@ -70,7 +70,7 @@
             android:id="@+id/textGlowny2"
             android:layout_width="210dp"
             android:layout_height="40dp"
-            android:layout_marginStart="85dp"
+            android:layout_marginStart="75dp"
             android:layout_marginTop="10dp"
             android:text="Pomiar glukozy"
             android:textAlignment="center"
@@ -81,43 +81,44 @@
         <Button
             android:id="@+id/btnGlownyNowy1"
             android:layout_width="130dp"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="65dp"
             android:background="@drawable/roundestyle"
             android:backgroundTintMode="add"
             android:text="Nowy"
-            android:textSize="18dp"/>
+            android:textSize="16dp" />
 
         <Button
             android:id="@+id/btnGlownyHistoria1"
             android:layout_width="130dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="220dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="200dp"
             android:layout_marginTop="65dp"
             android:background="@drawable/roundestyle"
-            android:backgroundTint="@color/black"
             android:text="Historia"
-            android:textSize="18dp"/>
+            android:textSize="16dp" />
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/frameLayoutGlownyInsulina"
-        android:layout_width="380dp"
+        android:layout_width="360dp"
         android:layout_height="160dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/roundestyle"
         android:backgroundTint="#B94A5BBA"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+        app:layout_constraintTop_toBottomOf="@+id/frameLayoutGlownyGlukoza">
 
         <TextView
             android:id="@+id/textGlowny3"
-            android:layout_width="wrap_content"
+            android:layout_width="260dp"
             android:layout_height="40dp"
-            android:layout_marginStart="85dp"
+            android:layout_marginStart="50dp"
             android:layout_marginTop="10dp"
             android:text="Dawkowanie insuliny"
             android:textAlignment="center"
@@ -128,22 +129,22 @@
         <Button
             android:id="@+id/btnGlownyNowy2"
             android:layout_width="130dp"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="65dp"
             android:background="@drawable/roundestyle"
             android:text="Nowy"
-            android:textSize="18dp" />
+            android:textSize="16dp" />
 
         <Button
             android:id="@+id/btnGlownyHistoria2"
             android:layout_width="130dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="220dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="200dp"
             android:layout_marginTop="65dp"
             android:background="@drawable/roundestyle"
             android:text="Historia"
-            android:textSize="18dp" />
+            android:textSize="16dp" />
     </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,17 +9,17 @@
 
     <Button
         android:id="@+id/btnHistoriaInsuliny2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
         android:backgroundTint="#2196F3"
         android:text="POWRÓT"
         app:icon="@android:drawable/ic_menu_revert"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.961" />
+        app:layout_constraintVertical_bias="0.023" />
 
     <Button
         android:id="@+id/btnHistoriaInsuliny1"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="568dp"
+        android:layout_marginBottom="580dp"
         android:backgroundTint="#08B60F"
         app:icon="@android:drawable/ic_input_add"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -49,10 +49,10 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.684"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textHistoriaInsulina2"
@@ -61,12 +61,12 @@
         android:layout_marginStart="14dp"
         android:layout_marginBottom="580dp"
         android:text="Historia dawkowania insuliny"
-        android:textColor="#090909"
+        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnHistoriaInsuliny1"
         app:layout_constraintHorizontal_bias="0.181"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textHistoriaInsulina1"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.84" />
 </androidx.constraintlayout.widget.ConstraintLayout>

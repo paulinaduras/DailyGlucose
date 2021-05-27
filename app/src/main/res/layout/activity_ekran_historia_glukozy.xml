@@ -9,17 +9,16 @@
 
     <Button
         android:id="@+id/btnHistoriaGlukoza2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
         android:backgroundTint="#2196F3"
-        android:text="POWRÓT"
         app:icon="@android:drawable/ic_menu_revert"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.961" />
+        app:layout_constraintVertical_bias="0.023" />
 
     <TextView
         android:id="@+id/textHistoriaGlukoza"
@@ -34,10 +33,10 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.684"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.036" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnHistoriaGlukozy1"
@@ -59,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:text="Historia pomiarów glukozy"
-        android:textColor="#090909"
+        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnHistoriaGlukozy1"
