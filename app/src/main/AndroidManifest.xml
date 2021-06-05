@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DailyGlucose">
-        <activity android:name=".EkranZlaGlukoza"></activity>
+        <activity android:name=".EkranWysokaGlukoza"></activity>
+        <activity android:name=".EkranNiskaGlukoza" />
         <activity android:name=".EkranPrawidlowejGlukozy" />
         <activity android:name=".EkranHistoriaInsuliny" />
         <activity android:name=".EkranHistoriaGlukozy" />

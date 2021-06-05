@@ -25,11 +25,28 @@ class EkranNowyGlukoza : AppCompatActivity() {
         btnZatwierdz = findViewById(R.id.btnNowyGlukoza1)
         btnPowrot = findViewById(R.id.btnNowyGlukoza2)
 
+//        val glukoza = editTextNowyGlukoza?.text.toString().toFloat()
+//        print(glukoza)
+
         btnPowrot?.setOnClickListener(object : View.OnClickListener{
             override fun onClick(v: View?) {
                 openEkranGlowny()
             }
         })
+
+//        btnZatwierdz?.setOnClickListener(object : View.OnClickListener{
+//            override fun onClick(v: View?) {
+//                if (glukoza < 80){
+//                    openEkranNiskaGlukoza()
+//                }
+//                else if(glukoza > 180){
+//                    openEkranWysokaGlukoza()
+//                }
+//                else{
+//                    openEkranPrawidlowaGlukoza()
+//                }
+//            }
+//        })
 
     }
 
@@ -37,4 +54,20 @@ class EkranNowyGlukoza : AppCompatActivity() {
         val intent = Intent(this, EkranGlowny::class.java)
         startActivity(intent)
     }
+
+//    private fun openEkranNiskaGlukoza(){
+//        val intent = Intent(this, EkranNiskaGlukoza::class.java)
+//        startActivity(intent)
+//    }
+//
+//    private fun openEkranWysokaGlukoza(){
+//        val intent = Intent(this, EkranWysokaGlukoza::class.java)
+//        startActivity(intent)
+//    }
+//
+//    private fun openEkranPrawidlowaGlukoza(){
+//        val intent = Intent(this, EkranPrawidlowejGlukozy::class.java)
+//        startActivity(intent)
+//    }
+
 }
