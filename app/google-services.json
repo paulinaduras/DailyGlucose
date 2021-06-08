@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "227813988787",
+    "project_id": "dailyglucose-c8c9d",
+    "storage_bucket": "dailyglucose-c8c9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227813988787:android:a5296862688d69329253c6",
+        "android_client_info": {
+          "package_name": "com.example.dailyglucose"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "227813988787-hg8s70rhc8s1qkgbnolff34ha9rn4lam.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwLBg1a2ObVVqZUmuy8hf8DTYpjdA6o14"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "227813988787-hg8s70rhc8s1qkgbnolff34ha9rn4lam.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

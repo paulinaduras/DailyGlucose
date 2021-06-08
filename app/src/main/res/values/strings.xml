@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">DailyGlucose</string>
+    <string name="err_msg_enter_email">Podaj swój email.</string>
+    <string name="err_msg_enter_name">Podaj swoją nazwę użytkownika.</string>
+    <string name="err_msg_enter_password">Podaj swoje hasło.</string>
+    <string name="err_msg_enter_reppassword">Potwierdź swoje hasło.</string>
+    <string name="err_msg_password_mismatch">Różne hasła.</string>
+    <string name="register_success">Twoja rejestracja przebiegła pomyślnie.</string>
 </resources>

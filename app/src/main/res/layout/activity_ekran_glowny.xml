@@ -85,7 +85,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="65dp"
             android:background="@drawable/roundestyle"
-            android:backgroundTintMode="add"
+            android:backgroundTint="@color/purple_200"
             android:text="Nowy"
             android:textSize="16dp" />
 
