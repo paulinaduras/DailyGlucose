@@ -92,18 +92,18 @@ class EkranRejestracji : BaseActivity() {
                     if(task.isSuccessful){
                         val firebaseUser: FirebaseUser = task.result!!.user!!
 
-//                        val user = User(
-//                            firebaseUser.uid,
-//                            rejestracjaNazwaUzytkownika?.text.toString().trim() {it <= ' '},
-//                            rejestracjaEmail?.text.toString().trim() {it <= ' '},
-//                        )
+                        val user = User(
+                            firebaseUser.uid,
+                            rejestracjaNazwaUzytkownika?.text.toString().trim() {it <= ' '},
+                            rejestracjaEmail?.text.toString().trim() {it <= ' '},
+                        )
 
 
-//                        FireStoreClass().registerUser(this,user)
+                        FireStoreClass().registerUser(this,user)
 
                         showErrorSnackBar("Twoja rejestracja przebiegła pomyślnie.",false)
-                        //FirebaseAuth.getInstance().signOut()
-//                        finish()
+                        FirebaseAuth.getInstance().signOut()
+                        finish()
 
 
                     } else{
