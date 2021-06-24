@@ -26,15 +26,15 @@
         android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="580dp"
+        android:layout_marginBottom="596dp"
         android:backgroundTint="#08B60F"
         app:icon="@android:drawable/ic_input_add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textHistoriaGlukozy2"
-        app:layout_constraintTop_toBottomOf="@+id/textHistoriaGlukoza"
-        app:layout_constraintVertical_bias="0.056" />
+        app:layout_constraintTop_toBottomOf="@+id/textHistoriaInsulina1" />
 
     <TextView
         android:id="@+id/textHistoriaInsulina1"
@@ -59,22 +59,44 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
+        android:layout_marginTop="10dp"
         android:text="Historia dawkowania insuliny"
         android:textColor="@color/black"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/rclHistoriaInsuliny"
+        app:layout_constraintBottom_toTopOf="@+id/textHistoriaInsulina3"
         app:layout_constraintEnd_toStartOf="@+id/btnHistoriaInsuliny1"
         app:layout_constraintHorizontal_bias="0.181"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textHistoriaInsulina1" />
+        app:layout_constraintTop_toBottomOf="@+id/textHistoriaInsulina1"
+        app:layout_constraintVertical_bias="0.34" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rclHistoriaInsuliny"
-        android:layout_width="368dp"
-        android:layout_height="532dp"
+        android:layout_width="360dp"
+        android:layout_height="521dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textHistoriaInsulina2" />
+        app:layout_constraintTop_toBottomOf="@+id/textHistoriaInsulina3" />
+
+    <TextView
+        android:id="@+id/textHistoriaInsulina3"
+        android:layout_width="360dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:text="     Data     Godzina      Insulina [jednostki]"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/rclHistoriaInsuliny"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHistoriaInsulina2"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

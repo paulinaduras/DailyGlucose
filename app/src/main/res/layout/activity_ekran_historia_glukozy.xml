@@ -7,6 +7,21 @@
     android:background="#B5E8EF"
     tools:context=".EkranHistoriaGlukozy">
 
+    <TextView
+        android:id="@+id/textHistoriaGlukozy3"
+        android:layout_width="360dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="35dp"
+        android:background="@color/white"
+        android:text="Data         Godzina       Glukoza [mg/dL]"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/rclHistoriaGlukozy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHistoriaGlukozy2" />
+
     <Button
         android:id="@+id/btnHistoriaGlukoza2"
         android:layout_width="60dp"
@@ -42,21 +57,21 @@
         android:id="@+id/btnHistoriaGlukozy1"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="20dp"
         android:backgroundTint="#08B60F"
         app:icon="@android:drawable/ic_input_add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textHistoriaGlukozy2"
         app:layout_constraintTop_toBottomOf="@+id/textHistoriaGlukoza"
-        app:layout_constraintVertical_bias="0.041" />
+        app:layout_constraintVertical_bias="0.021" />
 
     <TextView
         android:id="@+id/textHistoriaGlukozy2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="25dp"
         android:text="Historia pomiarów glukozy"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -65,6 +80,19 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textHistoriaGlukoza"
-        app:layout_constraintVertical_bias="0.053" />
+        app:layout_constraintVertical_bias="0.035" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rclHistoriaGlukozy"
+        android:layout_width="360dp"
+        android:layout_height="520dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="25dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHistoriaGlukozy3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

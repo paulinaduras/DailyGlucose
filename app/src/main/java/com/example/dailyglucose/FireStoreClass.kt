@@ -22,7 +22,7 @@ class FireStoreClass {
             .addOnFailureListener { e ->
                 Log.e(
                     activity.javaClass.simpleName,
-                    "Error while registering the user",
+                    "Błąd podczas rejestracji urzytkownika.",
                     e
                 )
             }
@@ -52,13 +52,20 @@ class FireStoreClass {
                     is EkranLogowania -> {
                         activity.userLoggedInSuccess(user)
                     }
+//                    is EkranNowyGlukoza -> {
+//                        activity.uzupełnienieHistoriiGlukozy(user.historiaGlukozy)
+//                    }
+//                    is EkranNowyInsulina -> {
+//                        activity.uzupełnienieHistoriiInsuliny(user.historiaInsuliny)
+//                    }
+                    is EkranHistoriaGlukozy -> {
+                        activity.uzupełnienieHistoriiGlukozy(user.historiaGlukozy)
+                    }
                     is EkranHistoriaInsuliny -> {
-                        println("go to kkk")
-//                        activity.kkk(user)
+                        activity.uzupełnienieHistoriiInsuliny(user.historiaInsuliny)
                     }
                 }
             }
-
     }
 
     fun  aktualizacjaHistoriGlukozy(activity: Activity, historiaGlukozy: Array<String>){
@@ -74,11 +81,4 @@ class FireStoreClass {
             .document(getCurrentUserID())
             .update("historiaInsuliny",historiaInsuliny)
     }
-
-    fun pobierzHistorieInsuliny(){
-        mFireStore.collection("Users")
-            .document(getCurrentUserID())
-            .get()
-    }
-
 }

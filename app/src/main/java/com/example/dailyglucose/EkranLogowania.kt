@@ -74,10 +74,10 @@ class EkranLogowania : BaseActivity() {
 
                     if(task.isSuccessful){
                         FireStoreClass().getUserDetails(this)
-                        showErrorSnackBar("You are logged in successfully.", false)
+                        showErrorSnackBar("Logowanie zakończone sukcesem.", false)
 
                     } else{
-                        showErrorSnackBar(task.exception!!.message.toString(),true)
+                        showErrorSnackBar("Hasło jest nieprawidłowe lub użytkownik nie posiada hasła.",true)
                     }
                 }
         }

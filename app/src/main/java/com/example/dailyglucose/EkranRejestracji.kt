@@ -35,7 +35,6 @@ class EkranRejestracji : BaseActivity() {
         btnRejestracji?.setOnClickListener(object : View.OnClickListener{
             override fun onClick(v: View?) {
                 registerUser()
-//                openEkranLogowania()
             }
         })
 
@@ -126,6 +125,7 @@ class EkranRejestracji : BaseActivity() {
             resources.getString(R.string.register_success),
             Toast.LENGTH_SHORT
         ).show()
+        openEkranLogowania()
 
     }
 }

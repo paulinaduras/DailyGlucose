@@ -5,9 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class EkranHistoriaGlukozy : AppCompatActivity() {
 
+    private var rclHistoriaGlukozy: RecyclerView? = null
     private var btnNowyGLukoza: Button? = null
     private var btnPowrot: Button? = null
 
@@ -17,7 +20,9 @@ class EkranHistoriaGlukozy : AppCompatActivity() {
 
         btnNowyGLukoza = findViewById(R.id.btnHistoriaGlukozy1)
         btnPowrot = findViewById(R.id.btnHistoriaGlukoza2)
+        rclHistoriaGlukozy = findViewById(R.id.rclHistoriaGlukozy)
 
+        FireStoreClass().getUserDetails(this)
 
         btnNowyGLukoza?.setOnClickListener(object : View.OnClickListener{
             override fun onClick(v: View?) {
@@ -30,8 +35,6 @@ class EkranHistoriaGlukozy : AppCompatActivity() {
                 openEkranGlowny()
             }
         })
-
-
     }
 
     private fun oknoDodawaniaGlukozy(){
@@ -43,4 +46,11 @@ class EkranHistoriaGlukozy : AppCompatActivity() {
         val intent = Intent(this, EkranGlowny::class.java)
         startActivity(intent)
     }
+
+    fun uzupełnienieHistoriiGlukozy(lista: MutableList<String>){
+        val pomiaryAdapter = InsulinaAdapter(lista)
+        rclHistoriaGlukozy?.adapter = pomiaryAdapter
+        rclHistoriaGlukozy?.layoutManager = LinearLayoutManager(this,RecyclerView.VERTICAL,false)
+    }
+
 }
