@@ -3,14 +3,18 @@ package com.example.dailyglucose
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.text.TextUtils
 import android.view.View
 import android.widget.*
 import java.text.SimpleDateFormat
+import java.time.LocalDate
+import java.time.LocalDateTime
+import java.time.LocalTime
 import java.util.*
 
-class EkranNowyGlukoza : AppCompatActivity() {
+class EkranNowyGlukoza : BaseActivity() {
 
     private var editTextNowyGlukoza: EditText? = null
     private var tvGlukozaData: TextView? = null
@@ -19,6 +23,7 @@ class EkranNowyGlukoza : AppCompatActivity() {
     private var btnTimeGlukoza: ImageView? = null
     private var btnZatwierdz: Button? = null
     private var btnPowrot: Button? = null
+    private var lista: MutableList<String> = mutableListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,9 +38,8 @@ class EkranNowyGlukoza : AppCompatActivity() {
         btnPowrot = findViewById(R.id.btnNowyGlukoza2)
 
         val cal = Calendar.getInstance()
-        val year = cal.get(Calendar.YEAR)
-        val month = cal.get(Calendar.MONTH)
-        val day = cal.get(Calendar.DAY_OF_MONTH)
+
+        FireStoreClass().getUserDetails(this)
 
         btnPowrot?.setOnClickListener(object : View.OnClickListener{
             override fun onClick(v: View?) {
@@ -57,7 +61,7 @@ class EkranNowyGlukoza : AppCompatActivity() {
                 else {
                     tvGlukozaData?.setText("" + dd + "." + (mm + 1) + "." + yy)
                 }
-            }, year, month, day)
+            }, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH), cal.get(Calendar.DAY_OF_MONTH))
             dateSetListener.show()
         }
 
@@ -84,8 +88,9 @@ class EkranNowyGlukoza : AppCompatActivity() {
         startActivity(intent)
     }
 
-    private fun openEkranNiskaGlukoza(){
+    private fun openEkranNiskaGlukoza(glukoza: String){
         val intent = Intent(this, EkranNiskaGlukoza::class.java)
+        intent.putExtra("glucose",glukoza)
         startActivity(intent)
     }
 
@@ -99,18 +104,80 @@ class EkranNowyGlukoza : AppCompatActivity() {
         startActivity(intent)
     }
 
-    private fun sprawdzPoprawność(){
-        var glukoza = editTextNowyGlukoza?.text.toString().toInt()
+    private fun validateGlucoseDetails(): Boolean {
 
-        if (glukoza < 80){
-            openEkranNiskaGlukoza()
-        }
-        else if(glukoza > 180){
-            openEkranWysokaGlukoza()
-        }
-        else{
-            openEkranPrawidlowaGlukoza()
+        return when{
+            TextUtils.isEmpty(editTextNowyGlukoza?.text.toString().trim{ it <= ' '}) -> {
+                showErrorSnackBar("Podaj wartość poziomu glukozy.", true)
+                false
+            }
+
+            TextUtils.isEmpty(tvGlukozaData?.text.toString().trim{ it <= ' '}) -> {
+                showErrorSnackBar("Wybierz datę pomiaru.",true)
+                false
+            }
+
+            TextUtils.isEmpty(tvGlukozaGodzina?.text.toString().trim{ it <= ' '}) -> {
+                showErrorSnackBar("Wybierz godzinę pomiaru.",true)
+                false
+            }
+
+            else -> {
+                true
+            }
         }
     }
+
+    fun kk(tab: MutableList<String>){
+        lista = tab
+    }
+
+    private fun sprawdzPoprawność(){
+        var pomiaryGlukozy: MutableList<String> = mutableListOf()
+
+        if (validateGlucoseDetails()) {
+
+            var glukoza = editTextNowyGlukoza?.text.toString().toInt()
+            var data = tvGlukozaData?.text.toString()
+            var godzina = tvGlukozaGodzina?.text.toString()
+
+            var dane = ""
+            if (glukoza < 100){
+                dane = " $data      $godzina                   $glukoza"
+            }
+            else if (glukoza <10){
+                dane = " $data      $godzina                    $glukoza"
+
+            }
+            else{
+                dane = " $data      $godzina                  $glukoza"
+            }
+
+            pomiaryGlukozy.add(dane)
+            for (i in lista){
+                pomiaryGlukozy.add(i)
+            }
+
+            FireStoreClass().aktualizacjaHistoriGlukozy(pomiaryGlukozy)
+            showErrorSnackBar("Nowy pomiar glukozy został pomyślnie dodany.", false)
+
+            Handler().postDelayed(
+                {
+                    if (glukoza < 80) {
+                        openEkranNiskaGlukoza(glukoza.toString())
+                    } else if (glukoza > 160) {
+                        openEkranWysokaGlukoza()
+                    } else {
+                        openEkranPrawidlowaGlukoza()
+                    }
+                },
+                3000 // value in milliseconds
+            )
+
+
+        }
+    }
+
+
 
 }

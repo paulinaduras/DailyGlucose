@@ -26,6 +26,7 @@ class EkranLogowania : BaseActivity() {
         btnLogowania = findViewById(R.id.btnLogowania)
         btnNoweKonto = findViewById(R.id.btnNoweKonto)
 
+
         btnLogowania?.setOnClickListener(object : View.OnClickListener{
             override fun onClick(v: View?) {
                 logInRegisteredUser()

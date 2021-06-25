@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import com.google.firebase.auth.FirebaseAuth
 
 class EkranStartu : AppCompatActivity() {
 
@@ -19,6 +20,12 @@ class EkranStartu : AppCompatActivity() {
 
         btnZaloguj = findViewById(R.id.btnZaloguj)
         btnZarejestruj = findViewById(R.id.btnZarejestruj)
+
+        val currentuser = FirebaseAuth.getInstance().currentUser
+        if(currentuser != null) {
+            startActivity(Intent(this, EkranGlowny::class.java))
+            finish()
+        }
 
         btnZaloguj?.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {

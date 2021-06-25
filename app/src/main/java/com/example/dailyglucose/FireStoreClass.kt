@@ -1,10 +1,12 @@
 package com.example.dailyglucose
 
 import android.app.Activity
+import android.content.Intent
 import android.util.Log
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.SetOptions
+
 
 class FireStoreClass {
 
@@ -52,9 +54,9 @@ class FireStoreClass {
                     is EkranLogowania -> {
                         activity.userLoggedInSuccess(user)
                     }
-//                    is EkranNowyGlukoza -> {
-//                        activity.uzupełnienieHistoriiGlukozy(user.historiaGlukozy)
-//                    }
+                    is EkranNowyGlukoza -> {
+                        activity.kk(user.historiaGlukozy)
+                    }
 //                    is EkranNowyInsulina -> {
 //                        activity.uzupełnienieHistoriiInsuliny(user.historiaInsuliny)
 //                    }
@@ -68,14 +70,14 @@ class FireStoreClass {
             }
     }
 
-    fun  aktualizacjaHistoriGlukozy(activity: Activity, historiaGlukozy: Array<String>){
+    fun  aktualizacjaHistoriGlukozy(historiaGlukozy: MutableList<String>){
 
         mFireStore.collection("Users")
             .document(getCurrentUserID())
             .update("historiaGlukozy",historiaGlukozy)
     }
 
-    fun  aktualizacjaHistoriInsuliny(activity: Activity, historiaInsuliny: Array<String>){
+    fun  aktualizacjaHistoriInsuliny(historiaInsuliny: MutableList<String>){
 
         mFireStore.collection("Users")
             .document(getCurrentUserID())

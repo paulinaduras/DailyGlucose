@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import com.google.firebase.auth.FirebaseAuth
 
 class EkranGlowny : AppCompatActivity() {
 
@@ -58,27 +59,33 @@ class EkranGlowny : AppCompatActivity() {
     }
 
     private fun wyloguj(){
+        FirebaseAuth.getInstance().signOut()
         val intent = Intent(this, EkranStartu::class.java)
         startActivity(intent)
+        finish()
     }
 
     private fun oknoDodawaniaGlukozy(){
         val intent = Intent(this, EkranNowyGlukoza::class.java)
         startActivity(intent)
+        finish()
     }
 
     private fun oknoDodawaniaInsuliny(){
         val intent = Intent(this, EkranNowyInsulina::class.java)
         startActivity(intent)
+        finish()
     }
 
     private fun oknoHistoriaGlukozy(){
         val intent = Intent(this, EkranHistoriaGlukozy::class.java)
         startActivity(intent)
+        finish()
     }
 
     private fun oknoHistoriaInsuliny(){
         val intent = Intent(this, EkranHistoriaInsuliny::class.java)
         startActivity(intent)
+        finish()
     }
 }
