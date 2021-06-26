@@ -2,6 +2,7 @@ package com.example.dailyglucose
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.text.TextUtils
 import android.view.View
 import android.widget.Button
@@ -12,6 +13,7 @@ import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 
+@Suppress("DEPRECATION")
 class EkranRejestracji : BaseActivity() {
 
     private var rejestracjaNazwaUzytkownika: EditText? = null
@@ -48,10 +50,6 @@ class EkranRejestracji : BaseActivity() {
     private fun validateRegisterDetails(): Boolean {
 
         return when{
-            TextUtils.isEmpty(rejestracjaEmail?.text.toString().trim{ it <= ' '}) -> {
-                showErrorSnackBar(resources.getString(R.string.err_msg_enter_email),true)
-                false
-            }
             TextUtils.isEmpty(rejestracjaNazwaUzytkownika?.text.toString().trim{ it <= ' '}) -> {
                 showErrorSnackBar(resources.getString(R.string.err_msg_enter_name),true)
                 false
@@ -72,9 +70,13 @@ class EkranRejestracji : BaseActivity() {
                 false
             }
 
+            TextUtils.isEmpty(rejestracjaEmail?.text.toString().trim{ it <= ' '}) -> {
+                showErrorSnackBar(resources.getString(R.string.err_msg_enter_email),true)
+                false
+            }
+
 
             else -> {
-                //showErrorSnackBar("Your details are valid",false)
                 true
             }
         }
@@ -104,7 +106,6 @@ class EkranRejestracji : BaseActivity() {
                         FirebaseAuth.getInstance().signOut()
                         finish()
 
-
                     } else{
                         showErrorSnackBar(task.exception!!.message.toString(),true)
                     }
@@ -126,6 +127,5 @@ class EkranRejestracji : BaseActivity() {
             Toast.LENGTH_SHORT
         ).show()
         openEkranLogowania()
-
     }
 }

@@ -16,10 +16,10 @@
         app:icon="@android:drawable/ic_menu_revert"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintHorizontal_bias="0.074"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.029" />
 
     <Button
         android:id="@+id/btnHistoriaInsuliny1"
@@ -28,10 +28,10 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="596dp"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="#08B60F"
         app:icon="@android:drawable/ic_input_add"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textHistoriaInsulina3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textHistoriaGlukozy2"
         app:layout_constraintTop_toBottomOf="@+id/textHistoriaInsulina1" />
@@ -49,7 +49,7 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintHorizontal_bias="0.612"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -59,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:text="Historia dawkowania insuliny"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -73,7 +73,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rclHistoriaInsuliny"
         android:layout_width="360dp"
-        android:layout_height="521dp"
+        android:layout_height="540dp"
         android:layout_marginBottom="24dp"
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -86,11 +86,11 @@
         android:id="@+id/textHistoriaInsulina3"
         android:layout_width="360dp"
         android:layout_height="35dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:background="@color/white"
-        android:text="     Data     Godzina      Insulina [jednostki]"
+        android:text="     Data          Godzina      Insulina [jednostki]"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/rclHistoriaInsuliny"
         app:layout_constraintEnd_toEndOf="parent"

@@ -55,11 +55,11 @@ class FireStoreClass {
                         activity.userLoggedInSuccess(user)
                     }
                     is EkranNowyGlukoza -> {
-                        activity.kk(user.historiaGlukozy)
+                        activity.pobierzHistorieGlukozy(user.historiaGlukozy)
                     }
-//                    is EkranNowyInsulina -> {
-//                        activity.uzupełnienieHistoriiInsuliny(user.historiaInsuliny)
-//                    }
+                    is EkranNowyInsulina -> {
+                        activity.pobierzHistorieInsuliny(user.historiaInsuliny)
+                    }
                     is EkranHistoriaGlukozy -> {
                         activity.uzupełnienieHistoriiGlukozy(user.historiaGlukozy)
                     }
