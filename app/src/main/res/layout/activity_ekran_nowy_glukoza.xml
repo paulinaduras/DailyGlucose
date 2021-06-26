@@ -56,7 +56,7 @@
 
     <Button
         android:id="@+id/btnNowyGlukoza1"
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="145dp"
         android:background="@drawable/roundestyle"
@@ -158,7 +158,7 @@
         android:layout_marginStart="31dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="60dp"
-        android:background="#A185C1F1"
+        android:background="#E174D2EA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tvNowyGlukozaData"
         app:layout_constraintTop_toBottomOf="@+id/textNowyGlukoza5"
@@ -169,7 +169,7 @@
         android:layout_width="70dp"
         android:layout_height="60dp"
         android:layout_marginBottom="70dp"
-        android:background="#A14AA6EF"
+        android:background="#E174D2EA"
         app:layout_constraintBottom_toTopOf="@+id/btnNowyGlukoza1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.36"

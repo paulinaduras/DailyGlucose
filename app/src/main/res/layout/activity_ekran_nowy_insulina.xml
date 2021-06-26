@@ -39,7 +39,7 @@
         android:layout_marginStart="33dp"
         android:layout_marginTop="56dp"
         android:layout_marginEnd="60dp"
-        android:background="#A14AA6EF"
+        android:background="#E174D2EA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/tvNowyInsulinaData"
@@ -51,7 +51,7 @@
         android:layout_width="70dp"
         android:layout_height="60dp"
         android:layout_marginEnd="60dp"
-        android:background="#A14AA6EF"
+        android:background="#E174D2EA"
         app:layout_constraintBottom_toTopOf="@+id/btnNowyInsulina1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -62,7 +62,7 @@
 
     <Button
         android:id="@+id/btnNowyInsulina1"
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="130dp"
         android:background="@drawable/roundestyle"
